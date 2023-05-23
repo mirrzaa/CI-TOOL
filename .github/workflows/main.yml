@@ -22,7 +22,7 @@ jobs:
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
         with:
-          registry: ghcr.io
+          registry: ghcr.io/v2/
           username: mirrzaa
           password: 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
 
@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/mirrzaa/CI-TOOL:latest
+          tags: ghcr.io/v2/mirrzaa/CI-TOOL:latest
           platforms: linux/amd64,linux/arm64
