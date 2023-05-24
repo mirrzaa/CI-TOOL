@@ -24,7 +24,7 @@ jobs:
         with:
           registry: ghcr.io
           username: mirrzaa
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: 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
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
